@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objetivos SMART</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🎯 SMART</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#que-es">¿Qué es?</a>
+      <a href="#letras">Las 5 letras</a>
+      <a href="#ejemplos">Ejemplos</a>
+      <a href="#generador">Generador</a>
+      <a href="#checklist">Checklist</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+  </header>
+
+  <!-- INICIO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content reveal">
+      <h1>Objetivos <span>SMART</span></h1>
+      <p>Aprende a convertir tus metas en objetivos claros, medibles y alcanzables.</p>
+      <a href="#que-es" class="btn">Empezar ✨</a>
+    </div>
+  </section>
+
+  <!-- QUÉ ES -->
+  <section id="que-es" class="section">
+    <h2 class="reveal">¿Qué son los objetivos SMART?</h2>
+    <div class="grid-2">
+      <div class="card reveal">
+        <h3>📖 Definición</h3>
+        <p>SMART es una técnica para formular objetivos de forma clara y estructurada. Su nombre es un acrónimo en inglés de cinco características que todo buen objetivo debe cumplir: <b>S</b>pecific, <b>M</b>easurable, <b>A</b>chievable, <b>R</b>elevant y <b>T</b>ime-bound.</p>
+      </div>
+      <div class="card reveal">
+        <h3>🕰️ Origen</h3>
+        <p>El término fue propuesto en 1981 por George T. Doran en un artículo de la revista <i>Management Review</i>. Desde entonces se usa en empresas, escuelas, deporte y desarrollo personal.</p>
+      </div>
+      <div class="card reveal">
+        <h3>❓ ¿Para qué sirve?</h3>
+        <p>Evita metas vagas como "quiero mejorar". Permite planificar, dar seguimiento al progreso, mantener la motivación y saber con certeza cuándo se logró el objetivo.</p>
+      </div>
+      <div class="card reveal">
+        <h3>🌟 Beneficios</h3>
+        <ul>
+          <li>Mayor claridad y enfoque</li>
+          <li>Facilita medir el avance</li>
+          <li>Mejora la organización del tiempo</li>
+          <li>Aumenta la motivación y el compromiso</li>
+          <li>Reduce errores y frustraciones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LAS 5 LETRAS -->
+  <section id="letras" class="section alt">
+    <h2 class="reveal">Las 5 letras de SMART</h2>
+    <p class="subtitle">Haz clic en cada letra para conocer su significado 👇</p>
+
+    <div class="tabs" id="tabs"></div>
+    <div class="tab-content card" id="tabContent"></div>
+  </section>
+
+  <!-- EJEMPLOS -->
+  <section id="ejemplos" class="section">
+    <h2 class="reveal">Ejemplos: antes y después</h2>
+    <p class="subtitle">Pasa el cursor o toca cada tarjeta para ver cómo se transforma.</p>
+    <div class="grid-3" id="ejemplosGrid"></div>
+  </section>
+
+  <!-- GENERADOR -->
+  <section id="generador" class="section alt">
+    <h2 class="reveal">🛠️ Generador de objetivos SMART</h2>
+    <p class="subtitle">Responde cada pregunta y se armará tu objetivo.</p>
+    <form id="smartForm" class="card form">
+      <label>S – ¿Qué quieres lograr exactamente?
+        <input type="text" id="fS" placeholder="Ej: Aprobar el examen de matemáticas">
+      </label>
+      <label>M – ¿Cómo lo vas a medir?
+        <input type="text" id="fM" placeholder="Ej: con una calificación mínima de 9">
+      </label>
+      <label>A – ¿Cómo lo vas a lograr? (acciones)
+        <input type="text" id="fA" placeholder="Ej: estudiando 1 hora diaria">
+      </label>
+      <label>R – ¿Por qué es importante para ti?
+        <input type="text" id="fR" placeholder="Ej: porque quiero mantener mi beca">
+      </label>
+      <label>T – ¿Para cuándo?
+        <input type="text" id="fT" placeholder="Ej: antes del 30 de noviembre">
+      </label>
+      <button type="submit" class="btn">Generar objetivo ✨</button>
+      <button type="button" class="btn ghost" id="limpiar">Limpiar</button>
+    </form>
+    <div id="resultado" class="resultado"></div>
+  </section>
+
+  <!-- CHECKLIST -->
+  <section id="checklist" class="section">
+    <h2 class="reveal">✅ ¿Tu objetivo es SMART?</h2>
+    <p class="subtitle">Marca las preguntas que tu objetivo sí cumple.</p>
+    <div class="card checklist">
+      <label><input type="checkbox"> ¿Es claro y concreto (sabes exactamente qué quieres)?</label>
+      <label><input type="checkbox"> ¿Tiene números o indicadores para medirlo?</label>
+      <label><input type="checkbox"> ¿Es realista con tus recursos y tiempo?</label>
+      <label><input type="checkbox"> ¿Está relacionado con tus metas o intereses importantes?</label>
+      <label><input type="checkbox"> ¿Tiene una fecha límite definida?</label>
+      <div class="progress"><div class="bar" id="bar"></div></div>
+      <p id="checkMsg" class="check-msg">0 de 5 criterios cumplidos</p>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section alt">
+    <h2 class="reveal">🧠 Pon a prueba lo aprendido</h2>
+    <div class="card quiz" id="quizBox"></div>
+  </section>
+
+  <footer>
+    <p>Proyecto escolar · Técnica de objetivos SMART 💖</p>
+    <p>Integrante: <b>Tu Nombre Aquí</b></p>
+  </footer>
+
+  <button id="topBtn" title="Subir">⬆</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
